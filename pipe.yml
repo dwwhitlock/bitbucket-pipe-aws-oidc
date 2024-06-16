@@ -1,0 +1,16 @@
+---
+name: AWS S3 Deploy
+image: dwightwhitlock1/aws-oidc-bitbucket-pipe
+description: Authenticate via OIDC to AWS
+category: Deployment
+repository: https://github.com/dwwhitlock/bitbucket-pipe-aws-oidc
+maintainer:
+    name: Dwight Whitlock
+variables:
+    - name: AWS_OIDC_ROLE_ARN
+      default: $AWS_OIDC_ROLE_ARN
+    - name: AWS_DEFAULT_REGION
+      default: $AWS_DEFAULT_REGION
+tags:
+    - deployment
+    - AWS
