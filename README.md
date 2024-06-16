@@ -38,4 +38,5 @@ pipelines:
             variables:
               AWS_OIDC_ROLE_ARN: arn:aws:iam::0000000000:role/bitbucket-oidc-role
               AWS_DEFAULT_REGION: us-east-1
+            
 ```
