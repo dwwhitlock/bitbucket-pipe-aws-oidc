@@ -1,6 +1,6 @@
 ---
-name: AWS S3 Deploy
-image: dwightwhitlock1/aws-oidc-bitbucket-pipe
+name: AWS OIDC Authenticate
+image: dwightwhitlock1/aws-oidc-bitbucket-pipe:sha-1d105b4
 description: Authenticate via OIDC to AWS
 category: Deployment
 repository: https://github.com/dwwhitlock/bitbucket-pipe-aws-oidc
