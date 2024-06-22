@@ -20,6 +20,5 @@ RUN pip install poetry==1.8.3
 COPY README.md LICENSE /
 COPY pipe /pipe
 
+# Run authentication
 RUN echo "/pipe/pipe.sh" >> $HOME/.bashrc
-
-ENTRYPOINT ["/pipe/pipe.sh"]
