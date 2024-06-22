@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+# run if AWS_OIDC_ROLE_ARN is set
+if [ -z "${AWS_OIDC_ROLE_ARN}" ]; then
+  echo "AWS_OIDC_ROLE_ARN is not set. Skipping..."
+  exit 0
+fi
+
 mkdir -p /.aws-oidc
 AWS_WEB_IDENTITY_TOKEN_FILE=/.aws-oidc/web_identity_token
 echo "${BITBUCKET_STEP_OIDC_TOKEN}" >> ${AWS_WEB_IDENTITY_TOKEN_FILE}
